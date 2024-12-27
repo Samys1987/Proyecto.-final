@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+// Fuentes
+$font-oswald: 'Oswald', sans-serif;
+$font-poppins: 'Poppins', sans-serif;
+
+// Colores
+$black: #111111;
+$white: #FFFFFF;
+$gray: #f5f5f5;
+$gray-light: #f9f9f9;
+$shadow: rgba(0, 0, 0, 0.1);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; 
+  list-style: none; 
+}
+
+body {
+  font-family: $font-poppins;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: $gray-light;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Botones genéricos
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &-1, &-2, &-3 {
+    padding: 11px 25px;
+    background-color: $black;
+    color: $white;
+    cursor: pointer;
+    font-size: 15px;
+
+    &:hover {
+      background-color: $gray; 
+    }
+  }
+}
+
+// Header
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+
+  .header-img,
+  .header-text {
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .header-text {
+    h1 {
+      font-size: 90px;
+      text-transform: uppercase;
+      line-height: 1;
+      color: $black;
+      font-family: $font-oswald;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+  }
+}
+// Carrito
+.menu-icono {
+    width: 5px;
+    
+  }
+  
+  .submenu {
+    position: relative;
+    
+  
+    #carrito {
+      display: none;
+    }
+  
+    &:hover #carrito {
+      display: block;
+      position: relative;
+      background-color: rgba(78, 75, 80, 0.46);
+      top: 100%;
+      z-index: 1;
+      padding: 20px;
+      min-width: 400px;
+      
+    }
+
+  }
+  
+
+// Productos
+.filtros {
+    font-family: $font-oswald;
+    padding: 2rem 1rem;
+    background-color: white;
+    margin: 2rem auto 1.5rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1200px;
+  
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .filtros-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+  
+      button {
+        font-family: $font-poppins; 
+        background-color: $black;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: $black;
+          transform: scale(1.05);
+        }
+  
+        &:focus {
+          outline: 2px solid #232f3e;
+        }
+      }
+    }
+  }
+  // Ofertas
+  .ofert {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ofert-1 {
+    display: flex;
+    align-items: center;
+    flex-basis: calc(33.3% - 15px);
+    background-color: $gray;
+    padding: 35px;
+  }
+  
+  .ofert-img {
+    flex-basis: 50%;
+    margin-right: 15px;
+  
+    img {
+      width: 250px;
+    }
+  }
+  
+  .ofert-txt {
+    flex-basis: 50%;
+    text-align: center;
+  
+    h3 {
+      color: $black;
+      font-family: $font-oswald;
+      font-size: 25px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+  }
+  
+  .btn-2 {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: $black;
+    color: $white;
+    border-radius: 5px;
+    font-size: 15px;
+  
+    &:hover {
+      background-color: $gray;
+    }
+  }
+  
+  // Productos
+  .products {
+    padding: 50px 0;
+    text-align: center;
+  
+    h2 {
+      color: $black;
+      font-family: $font-oswald;
+      font-size: 50px;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+  
+    .product-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+  
+      .product {
+        text-align: center;
+        padding: 30px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  
+        img {
+          width: 250px;
+          height: 370px;
+          margin-bottom: 20px;
+        }
+  
+        h3 {
+          font-size: 20px;
+          color: $black;
+          font-family: $font-oswald;
+          text-transform: uppercase;
+          margin-bottom: 15px;
+        }
+  
+        p {
+          .precio {
+            font-size: 16px;
+            color: $black;
+            margin-bottom: 15px;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+
+
+// Giftcard
+.GiftCard {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+  
+    &-1 {
+      display: flex;
+      align-items: center;
+      flex-basis: calc(33.3% - 15px);
+      background-color: $white;
+      padding: 35px;
+    }
+  
+    .GIF-img {
+      flex-basis: 50%;
+      margin-right: 15px;
+  
+      img {
+        width: 250px;
+      }
+    }
+  
+    .GIF-txt {
+      flex-basis: 50%;
+      text-align: center;
+  
+      h3 {
+        color: $black;
+        font-family: 'Oswald', sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+    }
+  }
+//Forms GIFTCARD
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $gray-light;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .gift-card-form {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #111;
+    }
+  
+    p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+  
+    form {
+      label {
+        display: block;
+        text-align: left;
+        margin: 10px 0 5px;
+        color: #333;
+        font-size: 14px;
+      }
+  
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+  
+        &:focus {
+          outline: none;
+          border-color: #111;
+        }
+      }
+    }
+  }
+  
+  .submit-btn {
+    background-color: $black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  
+    &:hover {
+      background-color: #333;
+      transform: scale(1.05);
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+/* Blog */
+.blog {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+  
+    &-1 {
+      flex-basis: calc(33.3% - 30px);
+  
+      img {
+        margin-bottom: 20px;
+      }
+  
+      h3 {
+        font-size: 20px;
+        color: #111111;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  
+  /* Contacto */
+  .contacto-hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f5f5f5;
+    color: #111111;
+  }
+  
+  .contacto-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: $white;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    form {
+      label {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color: #555;
+      }
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+  
+        &:focus {
+          outline: none;
+          border-color: #1a73e8;
+        }
+      }
+  
+      button {
+        background-color: $black;
+        color: $white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        padding: 0.75rem 1.5rem;
+        border-radius: 9px;
+  
+        &:hover {
+          background-color: $gray;
+        }
+      }
+    }
+  }
+  
+  /* Testimonios */
+  .testimonios {
+    padding: 2rem 1rem;
+    background-color: $gray;
+    color: $white;
+    text-align: center;
+    border-radius: 8px;
+    margin: 2rem auto;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-family: $font-oswald; 
+      color: $black;
+    }
+  
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+  
+      .testimonio {
+        background-color: $black;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+        p {
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+        }
+  
+        h4 {
+          font-size: 0.9rem;
+          font-style: italic;
+        }
+      }
+    }
+  }
+  
+
+
+
+
+  
+/* Cambiar color de los enlaces */
+footer a {
+    text-decoration: none; /* Eliminar subrayado */
+}
+i:hover {
+    background-color:$black;
+  }
+
+//Responsivo  
+@media (max-width: 991px) {
+  .menu   {
+    padding: 20px; 
+
+    label   {
+      display: initial; 
+    }
+
+    .navbar   {
+      position: absolute; 
+      top: 100%; 
+      left: 0;
+      right: 0;
+      background-color: $black; 
+      display: none; 
+
+      ul li   {
+        width: 100%; 
+
+        a  {
+          color: $white; 
+        }
+      }
+
+      #menu:checked ~ &   {
+        display: initial; 
+      }
+      
+    }
+  }
+
+  .header-content  { 
+    padding: 50px 0; 
+
+    .header-img  { 
+      display: none; 
+    }
+
+    .header-text { 
+      flex-basis: 100%; 
+      text-align: center; 
+
+      h1 { 
+        font-size: 70px; 
+      }
+    }
+  }
+
+  .products { 
+    h2  {
+      margin-bottom: 30px; 
+    }
+
+    .product-content { 
+      grid-template-columns: repeat(1, 1fr); 
+      gap: 30px; 
+    }
+
+    .product { 
+      padding: 0 30px; 
+
+      img { 
+        width: 200px; 
+        height: 200px; }
+      }
+    }
+}

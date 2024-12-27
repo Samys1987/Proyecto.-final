@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marroquinería|DAMZO|Home</title>
+    <link rel="icon" type="images/png" href="images/DAMZO.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+        <!-- NAV de Bootstrap-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/Logo.png" alt="DAMZO" width="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="quienessomos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Catálogo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="catalogo.html">Productos</a></li>
+                            <li><a class="dropdown-item" href="index.html">Season 2025</a></li>
+                            <li><a class="dropdown-item" href="giftcard.html">Gift Card</a></li>
+                        </ul>
+                    </li>
+                    <div>
+                        <ul>
+                            <li class="submenu">
+                                <img src="images/Carrito.svg" id="imagen-carrito" alt="Carrito">
+                                <div id="carrito">
+                                    <table id="lista-carrito">
+                                        <thead>
+                                            <tr>
+                                                <th>Producto seleccionado</th>                          
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <a href="#" id="vaciar carrito" class="btn-2">Vaciar el carrito</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Banner-->
+    <div class="header-content container">
+        <div class="header-img">
+            <img src="images/Blog2.jpg" alt="">
+        </div>
+        <div class="header-text">
+            <h1>Ofertas especiales</h1>
+            <p>Estrena las mejores carteras</p>
+            <a href="#" class="btn-1">Explorar ahora!</a>
+        </div>
+    </div>
+    </header>
+ <!--Sección GIFCARD-->
+ <section class="GiftCard container">
+    <div class="GiftCard-1">
+        <div class="GIF-img">
+            <img src="images/GIF1.png" alt="">
+        </div>
+        <div class="GIF-txt">
+            <h3>GiftCard $100.000.-</h3>
+            <a href="giftcard.html" class="btn-3">COMPRAR</a>
+        </div>
+    </div>
+    <div class="GiftCard-1">
+        <div class="GIF-img">
+            <img src="images/GIF2.png" alt="">
+        </div>
+        <div class="GIF-txt">
+            <h3>GiftCard $120.000.-</h3>
+            <a href="giftcard.html" class="btn-3">COMPRAR</a>
+        </div>
+    </div>
+    <div class="GiftCard-1">
+        <div class="GIF-img">
+            <img src="images/GIF3.png" alt="">
+        </div>
+        <div class="GIF-txt">
+            <h3>GiftCard $140.000.-</h3>
+            <a href="giftcard.html" class="btn-3">COMPRAR</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!--Productos con Precio y especificación-->
+    <main class="products container" id="lista-1">
+        <h2>SEASON25</h2>
+        <div class="product-content">
+            <div class="product">
+                <img src="images/Hombre1.jpg" alt="">
+                <div class="product-txt">
+                    <h3>DIOR</h3>
+                    <p>Bolso</p>
+                    <p class="precio">$130.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-1="1"> Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Mujer22.jpg" alt="">
+                <div class="product-txt">
+                    <h3>DEMON</h3>
+                    <p>Cartera</p>
+                    <p class="precio">$100.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-2="2"> Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Hombre2.jpg" alt="">
+                <div class="product-txt">
+                    <h3>ANGEL</h3>
+                    <p>Bolso</p>
+                    <p class="precio">$145.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-3="3"> Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Mujer27.jpg" alt="">
+                <div class="product-txt">
+                    <h3>STELLA</h3>
+                    <p>Cartera</p>
+                    <p class="precio">$90.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-4="4"> Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Hombre10.jpg" alt="">
+                <div class="product-txt">
+                    <h3>DAVID</h3>
+                    <p>Mochila</p>
+                    <p class="precio">$130.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-5="5"> Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Mujer26.jpg" alt="">
+                <div class="product-txt">
+                    <h3>STAR</h3>
+                    <p>Cartera</p>
+                    <p class="precio">$85.000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-6="6"> Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+    <!--sección Blogs-->
+    <section class="blog container">
+        <div class="blog-1">
+            <img src="images/Blog.jpg" alt="">
+            <h3>Bolsos para hombre</h3>
+            <p>
+                Los bolsos de hombre ofrecen estilo y funcionalidad. Desde prácticos maxi bolsos hasta sofisticadas
+                carteras de ejecutivo, la colección incluye modelos para todos los gustos. Apuesta por un estilo casual
+                con nuestras mochilas, bandoleras y bolsas de viaje si buscas un diseño actual pero discreto.
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="images/Mujer2.jpg" alt="">
+            <h3>Bolsos de Mujer</h3>
+            <p>
+                Dale un aire nuevo a tus looks con nuestra colección de bolsos para mujer. En ella podrás
+                encontrar desde los modelos más clásicos y minimalistas siempre con un toque actual a los más moda.
+                También econtrarás una amplia selección de
+                bolsos personalizables, ideal para ti y para regalo.
+            </p>
+        </div>
+
+        <div class="blog-1">
+            <img src="images/Blog4.jpg" alt="">
+            <h3>Unisex</h3>
+            <p>
+                Nuestros productos también incluyen la versión unisex lo cual brinda una forma de añadir distinción a
+                cualquier look formal o casual. Utilizando nuestra colección podras marcar tendencias haciendo que se
+                acoplen para cada persona.
+                Y asi permitan elevar tu estilo y aportan personalidad.
+
+            </p>
+        </div>
+    </section>
+    <!--Sección Footer  Bootstrap-->
+        <footer class="bg-ligh text-dark pb-4">
+            <div class="container text-center text-nd-start">
+                <div class="row text-center text-nd-start">
+                    <div class="col-md-2 col-lg-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold " >Dejanos ayudarte</h5>
+                        <hr class="mb-4">
+                        <p>
+                            <a href="#" class="text-dark">Tu cuenta</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-dark">Tus ordenes</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-dark">Ayuda</a>
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold ">Medios de Pagos</h5>
+                        <hr class="mb-4">
+                        <p>
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-cc-amex"></i>
+                        </p>
+
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold ">Contacto</h5>
+                        <hr class="mb-4">
+                        <p>
+                            <li class="fas fa-home me-3"></li>Juramento 3114
+                        </p>
+
+                        <p>
+                            <li class="fas fa-phone me-3"></li> +5491123994540
+                        </p>
+                        <p>
+                            <li class="fas fa-print me-3"></li> +54931081204
+                        </p>
+                    </div>
+                    <hr class="mb-4">
+                    <div class="text-center mb-2">
+                        <p>
+                            Copyright Todos los derechos reservados DAMZO
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                            <a href="https://www.facebook.com/?locale=es_LA" class="text-dark"> <i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/" class="text-dark"> <i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://ar.linkedin.com/" class="text-dark"> <i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://ar.pinterest.com/" class="text-dark"> <i class="fab fa-pinterest"></i></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
